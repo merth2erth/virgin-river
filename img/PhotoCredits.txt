@@ -43,3 +43,6 @@ Photo by pippalou at Morguefile.com
 town_picnic
 Photo by VerticalStripe at Morguefile.com
 
+mountain_cliff
+Photo by 3rdworldman at Morguefile.com
+
