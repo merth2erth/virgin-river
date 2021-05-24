@@ -18,6 +18,26 @@ a.nav-link {
    color: lightgray;
 }
 
-h2 {
+body {
    color: grey;
+}
+
+img {
+   border:grey;
+   border-style: groove;
+}
+
+.tab-content {
+   border: 3px solid #DDD;
+   border-top: none;
+   padding: 20px;
+}
+
+#myTab {
+   background-color: grey;
+   color:white;
+}
+
+.nav-pills > li > a.active {
+   background-color: #239B56  !important;
 }
