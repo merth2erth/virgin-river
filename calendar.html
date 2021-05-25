@@ -59,7 +59,7 @@
     <div class="card-body">
       <h5 class="card-title">Spring</h5>
       <p class="card-text"><em>Meet our Town Founder:</em> Come meet the woman who started it all. Every spring, Robyn Carr returns home to Virgin River to catch up with the town, see old friends, and make new ones. </p>
-      <a href="https://www.robyncarr.com" target="_blank" class="btn btn-secondary">Learn more about Robyn Carr</a>
+      <a href="https://www.robyncarr.com" target="_blank" class="btn btn-outline-success">Learn more about Robyn Carr</a>
     </div>
     </div>
   <div class="card p-2 mr-sm-4 my-sm-3 bg-light">
@@ -100,7 +100,7 @@
         <p class="card-text">Honor our troops with a stop at the biggest Christmas tree around. Adorned with medals honoring all branches of service, it's a holiday tradition that can't be missed. Stop by Jack's for some hot chocolate and enjoy the Christmas magic.</p>
         </div>
         <div class="col">
-          <img src="img/christmas_tree2.jpg" align-items-center style="max-width:100%; max-height: auto;">
+          <img src="img/christmas_tree3.jpg" align-items-center style="max-width:100%; max-height: auto;">
           </div>
       </div>
     </div>
@@ -113,6 +113,22 @@
       <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+      <script>
+        const f = document.getElementById('form');
+  const q = document.getElementById('query');
+  const google = 'https://www.google.com/search?q=site%3A+';
+  const site = 'virginriver.netlify.app';
+  
+  function submitted(event) {
+    event.preventDefault();
+    const url = google + site + '+' + q.value;
+    const win = window.open(url, '_blank');
+    win.focus();
+  }
+  
+  f.addEventListener('submit', submitted);
+      </script>
       <!-- endbuild -->
       
  </body>

@@ -5,13 +5,13 @@
 h1 {
    padding: 15px;
    font-family: 'Over the Rainbow', cursive;
-   color: grey;
+   color: #239B56;
 }
 
 #carousel {
-   border: grey;
-   border-style: inset;
-   border-width: thick;
+   border: #239B56;
+   border-style:solid;
+   border-width:thin;
 }
 
 a.nav-link {
@@ -42,5 +42,3 @@ img {
 .nav-pills > li > a.active {
    background-color: #239B56  !important;
 }
-
-

@@ -111,6 +111,22 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      const f = document.getElementById('form');
+const q = document.getElementById('query');
+const google = 'https://www.google.com/search?q=site%3A+';
+const site = 'virginriver.netlify.app';
+
+function submitted(event) {
+  event.preventDefault();
+  const url = google + site + '+' + q.value;
+  const win = window.open(url, '_blank');
+  win.focus();
+}
+
+f.addEventListener('submit', submitted);
+    </script>
      <!-- endbuild -->
  
  </body>
