@@ -25,6 +25,7 @@ body {
 img {
    border:grey;
    border-style: groove;
+   image-orientation: from-image;
 }
 
 .tab-content {
